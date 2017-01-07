@@ -13,7 +13,7 @@ public class GameStateTest extends TestCase {
 
   public void testBird() {
     ArrayList l = new ArrayList<ABObject>();
-    l.add(new ABObject(new Rectangle(0,0,100,100), ABType.WhiteBird));
+    l.add(ABObject.create(ABType.WhiteBird));
     GameState gs = new GameState(l);
     assertEquals(100, gs.getNumPoints());
   }  

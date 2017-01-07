@@ -63,4 +63,7 @@ public class ABObject extends Rectangle {
     counter = 0;	
   }
 
+  public static ABObject create(ABType type) {
+    return new ABObject(new Rectangle(0,0,100,100), type);
+  }
 }
