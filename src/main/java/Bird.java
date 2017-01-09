@@ -5,4 +5,9 @@ public class Bird extends ABObject {
   public Bird(Rectangle mbr, ABType type) {
     super(mbr, type);
   }
+  
+  @Override 
+  public int getPoints() {
+    return 100;
+  }
 }
