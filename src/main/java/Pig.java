@@ -1,12 +1,12 @@
 // -*- mode: Java; indent-tabs-mode: nil; c-basic-offset: 2; -*-
 import java.awt.Rectangle;
 
-public class Bird extends ABObject {
-  public Bird(Rectangle mbr, ABType type) {
+public class Pig extends ABObject {
+  public Pig(Rectangle mbr, ABType type) {
     super(mbr, type);
   }
   
   public getPoints() {
-	    return 100;
+	    return 1000;
 	  }
 }
