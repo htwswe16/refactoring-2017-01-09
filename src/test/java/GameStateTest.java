@@ -11,37 +11,37 @@ public class GameStateTest extends TestCase {
     assertEquals(0, gs.getNumPoints());
   }  
 
-  public void testBird() {
+  public void testBirdwhite() {
     ArrayList l = new ArrayList<ABObject>();
     l.add(ABObject.create(ABType.WhiteBird));
     GameState gs = new GameState(l);
     assertEquals(100, gs.getNumPoints());
   } 
-  public void testBird() {
+  public void testBirdyellow() {
 	    ArrayList l = new ArrayList<ABObject>();
 	    l.add(ABObject.create(ABType.yellowBird));
 	    GameState gs = new GameState(l);
 	    assertEquals(100, gs.getNumPoints());
 	  }  
-  public void testBird() {
+  public void testBirdred() {
 	    ArrayList l = new ArrayList<ABObject>();
 	    l.add(ABObject.create(ABType.redBird));
 	    GameState gs = new GameState(l);
 	    assertEquals(100, gs.getNumPoints());
 	  }  
-  public void testBird() {
+  public void testBirdblack() {
 	    ArrayList l = new ArrayList<ABObject>();
 	    l.add(ABObject.create(ABType.blackBird));
 	    GameState gs = new GameState(l);
 	    assertEquals(100, gs.getNumPoints());
 	  }  
-  public void testBird() {
+  public void testBirdblue() {
 	    ArrayList l = new ArrayList<ABObject>();
 	    l.add(ABObject.create(ABType.blueBird));
 	    GameState gs = new GameState(l);
 	    assertEquals(100, gs.getNumPoints());
 	  }  
-  public void testBird() {
+  public void testpig() {
 	    ArrayList l = new ArrayList<ABObject>();
 	    l.add(ABObject.create(ABType.pig));
 	    GameState gs = new GameState(l);
