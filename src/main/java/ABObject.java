@@ -55,6 +55,10 @@ public class ABObject extends Rectangle {
     return type;
   }
 
+  public int getPoints() {
+    return 0;
+  }
+
   public Point getCenter() {
     return new Point((int)getCenterX(), (int)getCenterY());
   }
