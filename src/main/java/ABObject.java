@@ -10,7 +10,7 @@
 import java.awt.Point;
 import java.awt.Rectangle;
 
-public class ABObject extends Rectangle {
+public class ABObject extends Rectangle implements VisualObject {
   private static final long serialVersionUID = 1L;
   private static int counter = 0;
   public int id;
@@ -51,19 +51,31 @@ public class ABObject extends Rectangle {
     this.type = ABType.Unknown;
   }
 
-  public ABType getType() {
+  /* (non-Javadoc)
+ * @see VisualObject#getType()
+ */
+@Override
+public ABType getType() {
     return type;
   }
 
-  public Point getCenter() {
+  /* (non-Javadoc)
+ * @see VisualObject#getCenter()
+ */
+@Override
+public Point getCenter() {
     return new Point((int)getCenterX(), (int)getCenterY());
   }
+
+public int getPoints(){
+	return 0;
+}
 
   public static void resetCounter() {
     counter = 0;	
   }
 
-  public static ABObject create(ABType type) {
+  public static VisualObject create(ABType type) {
 	  switch(type){
 	  case YellowBird:
 	  case RedBird:
