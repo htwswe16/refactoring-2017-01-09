@@ -10,7 +10,7 @@ public class GameState {
 
   int getNumPoints() {
     int result = 0;
-    for(ABObject o : objects) {
+    for(VisualObject o : objects) {
     	result += o.getPoints();
     }
   
