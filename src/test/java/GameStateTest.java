@@ -25,6 +25,6 @@ public class GameStateTest extends TestCase {
 	    GameState gs = new GameState(l);
 	    assertEquals(1000, gs.getNumPoints());
 	   
-  
+  }
   
   }
