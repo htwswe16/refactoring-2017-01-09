@@ -51,4 +51,8 @@ public class GameStateTest extends TestCase {
         l.add(ABObject.create(ABType.BlueBird));
         GameState gs = new GameState(l);
         assertEquals(100, gs.getNumPoints());
+        
   }  
+    
+    
+}
