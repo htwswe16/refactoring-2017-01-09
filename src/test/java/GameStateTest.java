@@ -4,18 +4,29 @@ import junit.framework.TestCase;
 import java.util.ArrayList;
 import java.awt.Rectangle;
 
-public class GameStateTest extends TestCase {
+public class GameStateTest extends TestCase
+{
 
-  public void testEmpty() {
+  public void testEmpty()
+  {
     GameState gs = new GameState(new ArrayList<ABObject>());
     assertEquals(0, gs.getNumPoints());
   }  
 
-  public void testBird() {
+  public void testBird() 
+  {
     ArrayList l = new ArrayList<ABObject>();
     l.add(ABObject.create(ABType.WhiteBird));
     GameState gs = new GameState(l);
     assertEquals(100, gs.getNumPoints());
+  }
+   
+  public void testPig ()
+  {
+    ArrayList l = new ArrayList<ABObject>();
+    l.add(ABObject.create(ABType.Pig));
+    GameState gs = new GameState(l);
+    assertEquals(1000, gs.getNumPoints());
   }  
 
 }
