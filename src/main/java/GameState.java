@@ -11,35 +11,8 @@ public class GameState {
   int getNumPoints() {
     int result = 0;
     for(ABObject o : objects) {
-      switch(o.getType()) {
-      case Pig:
-        result += 1000;
-        break;
-      case RedBird: 
-        result += 100;
-        break;
-      case YellowBird: 
-        result += 100;
-        break;
-      case BlueBird: 
-        result += 100;
-        break;
-      case BlackBird: 
-        result += 100;
-        break;
-      case WhiteBird: 
-        result += 100;
-        break;
-      case Ground:
-    	  break;
-      case Hill:
-    	  break;
-      case Sling:
-    	  break;
-      case Unknown:
-        break;
+    	result+= o.getPoints();
       }
-    }
   
     return result;
   }
