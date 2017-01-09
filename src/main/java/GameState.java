@@ -14,16 +14,24 @@ public class GameState {
       switch(o.getType()) {
       case Pig:
         result += 1000;
+        break;
+        
       case RedBird: 
         result += 100;
+        break;
+        
       case YellowBird: 
         result += 100;
+        break;
       case BlueBird: 
         result += 100;
+        break;
       case BlackBird: 
         result += 100;
+        break;
       case WhiteBird: 
         result += 100;
+        break;
       case Ground:
       case Hill:
       case Sling:

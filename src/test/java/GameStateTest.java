@@ -18,4 +18,13 @@ public class GameStateTest extends TestCase {
     assertEquals(100, gs.getNumPoints());
   }  
 
-}
+  public void testPig() 
+  {
+	    ArrayList l = new ArrayList<ABObject>();
+	    l.add(ABObject.create(ABType.Pig));
+	    GameState gs = new GameState(l);
+	    assertEquals(1000, gs.getNumPoints());
+	   
+  
+  
+  }
