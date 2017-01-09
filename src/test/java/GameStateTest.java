@@ -33,7 +33,7 @@ public class GameStateTest extends TestCase {
 	    ArrayList l = new ArrayList<ABObject>();
 	    l.add(ABObject.create(ABType.BlackBird));
 	    GameState gs = new GameState(l);
-	    assertEquals(100, gs.getNumPoints())  
+	    assertEquals(100, gs.getNumPoints());
 	  }  
   public void testBird5() {
 	    ArrayList l = new ArrayList<ABObject>();
