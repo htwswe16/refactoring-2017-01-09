@@ -6,7 +6,7 @@ public class Bird extends ABObject {
     super(mbr, type);
   }
   
-  public getPoints() {
+  public int getPoints() {
 	    return 100;
 	  }
 }
