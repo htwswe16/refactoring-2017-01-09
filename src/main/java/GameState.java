@@ -13,23 +13,23 @@ public class GameState {
     for(ABObject o : objects) {
       switch(o.getType()) {
       case Pig:
+    	  break;
         result += 1000;
-        break;
       case RedBird: 
+    	  break;
         result += 100;
-        break;
       case YellowBird: 
+    	  break;
         result += 100;
-        break;
       case BlueBird: 
+    	  break;
         result += 100;
-        break;
       case BlackBird: 
+    	  break;
         result += 100;
-        break;
       case WhiteBird: 
-        result += 100;
-        break;
+    	  break;
+        result += 100;      
       case Ground:
       case Hill:
       case Sling:
