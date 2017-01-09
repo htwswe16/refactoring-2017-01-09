@@ -34,7 +34,6 @@ public class GameState {
       case Hill:
       case Sling:
       case Unknown:
-        break;
       }
     }
   
