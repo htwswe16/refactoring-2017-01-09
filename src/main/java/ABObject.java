@@ -58,6 +58,9 @@ public class ABObject extends Rectangle {
   public Point getCenter() {
     return new Point((int)getCenterX(), (int)getCenterY());
   }
+  public int getPoints(){
+	  return 0;
+  }
 
   public static void resetCounter() {
     counter = 0;	
