@@ -25,10 +25,13 @@ public class GameState {
       case WhiteBird: 
         result += 100;
       case Ground:
+    	  break;
       case Hill:
+    	  break;
       case Sling:
+    	  break;
       case Unknown:
-        break;
+    	  break;
       }
     }
   
