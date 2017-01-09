@@ -68,6 +68,18 @@ public class ABObject extends Rectangle {
   }
 
   public static ABObject create(ABType type) {
-    return new ABObject(new Rectangle(0,0,100,100), type);
+	  switch(type) {
+	  case YellowBird:
+	  case RedBird:
+	  case BlueBird:
+	  case BlackBird:
+	  case WhiteBird:
+		  return new Bird(new Rectangle(0,0,100,100), type);
+	  case Pig: 
+		  return new Pig(new Rectangle(0,0,100,100), type);
+	  default: 
+		  return new ABObject(new Rectangle(0,0,100,100), type);
+	  }
+    
   }
 }
