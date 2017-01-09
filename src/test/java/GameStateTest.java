@@ -20,7 +20,7 @@ public class GameStateTest extends TestCase {
   
   public void testPig() {
 	    ArrayList l = new ArrayList<ABObject>();
-	    l.add(ABObject.create(ABType.PinkPig));
+	    l.add(ABObject.create(ABType.Pig));
 	    GameState gs = new GameState(l);
 	    assertEquals(1000, gs.getNumPoints());
 	  }  
