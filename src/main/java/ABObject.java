@@ -59,7 +59,7 @@ public class ABObject extends Rectangle {
     return new Point((int)getCenterX(), (int)getCenterY());
   }
   
-  public getPoints() {
+  public int getPoints() {
 	    return 0;
 	  }
 
