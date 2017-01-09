@@ -31,8 +31,11 @@ public class GameState {
         result += 100;   
         break;
       case Ground:
+    	  break;
       case Hill:
+    	  break;
       case Sling:
+    	  break;
       case Unknown:
     	  break;
       }
