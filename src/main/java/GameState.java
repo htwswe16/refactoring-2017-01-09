@@ -2,15 +2,15 @@
 import java.util.List;
 
 public class GameState {
-  private List<ABObject> objects;
+  private List<VisualObject> objects;
 
-  GameState(List<ABObject> obj) {
+  GameState(List<VisualObject> obj) {
     objects = obj;
   }
 
   int getNumPoints() {
     int result = 0;
-    for(ABObject o : objects) {
+    for(VisualObject o : objects) {
         result += o.getPoints();
     }
     return result;
