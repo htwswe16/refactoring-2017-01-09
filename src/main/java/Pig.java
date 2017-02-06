@@ -6,7 +6,7 @@ public class Pig extends ABObject {
     super(mbr, type);
   }
   
-  @Override
+  @Override 
   public int getPoints() {
     return 1000;
   }
