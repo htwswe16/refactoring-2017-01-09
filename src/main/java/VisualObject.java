@@ -2,10 +2,10 @@ import java.awt.Point;
 
 public interface VisualObject {
 
-	public abstract ABType getType();
+	ABType getType();
 
-	public abstract Point getCenter();
+	Point getCenter();
 
-	public abstract int getPoints();
+	int getPoints();
 
 }
