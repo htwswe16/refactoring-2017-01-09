@@ -81,16 +81,13 @@ public int getPoints() {
 
   public static VisualObject create(ABType type) {
 	  switch(type) {
-	  case YellowBird:
-	  case RedBird:
-	  case BlueBird:
-	  case BlackBird:
-	  case WhiteBird:
-		  return new Bird(new Rectangle(0,0,100,100), type);
-	  case Pig: 
-		  return new Pig(new Rectangle(0,0,100,100), type);
-	  default: 
-		  return new ABObject(new Rectangle(0,0,100,100), type);
+	  case Pig: return new Pig(new Rectangle(0,0,100,100), type);
+	  case YellowBird: return new Bird(new Rectangle(0,0,100,100), type);
+	  case BlackBird: return new Bird(new Rectangle(0,0,100,100), type);
+	  case BlueBird: return new Bird(new Rectangle(0,0,100,100), type);
+	  case RedBird: return new Bird(new Rectangle(0,0,100,100), type);
+	  case WhiteBird: return new Bird(new Rectangle(0,0,100,100), type);
+default: return new ABObject(new Rectangle(0,0,100,100), type);
 	  }
     
   }
